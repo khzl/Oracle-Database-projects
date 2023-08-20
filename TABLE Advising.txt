@@ -1,0 +1,6 @@
+CREATE TABLE advising ( 
+ student_id NUMBER(10) REFERENCES students(student_id), 
+ faculty_id NUMBER(10) REFERENCES faculty(faculty_id), 
+ advising_date DATE NOT NULL, 
+ PRIMARY KEY (student_id , faculty_id) 
+ );
