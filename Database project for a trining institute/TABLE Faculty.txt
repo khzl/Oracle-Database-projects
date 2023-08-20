@@ -1,0 +1,6 @@
+CREATE TABLE faculty ( 
+ faculty_id NUMBER(10) PRIMARY KEY, 
+ name VARCHAR2(50) NOT NULL, 
+ department_id NUMBER(10) REFERENCES departments(department_id), 
+ contact_info VARCHAR2(100) NOT NULL 
+ ); 
