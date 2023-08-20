@@ -1,8 +1,0 @@
-CREATE TABLE grades ( 
- student_id NUMBER(10) REFERENCES students(student_id), 
- course_id NUMBER(10) REFERENCES courses(course_id), 
- semester VARCHAR(20) NOT NULL, 
- grade VARCHAR(2) NOT NULL, 
- gpa NUMBER(3,2) NOT NULL, 
- PRIMARY KEY (student_id , course_id) 
- ); 
