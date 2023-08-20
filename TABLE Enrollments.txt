@@ -1,7 +1,0 @@
-CREATE TABLE enrollments ( 
- student_id NUMBER(10) REFERENCES students(student_id), 
- course_id NUMBER(10) REFERENCES courses(course_id), 
- semester VARCHAR(20) NOT NULL, 
- enrollment_date DATE NOT NULL, 
- PRIMARY KEY (student_id , course_id) 
- ); 
